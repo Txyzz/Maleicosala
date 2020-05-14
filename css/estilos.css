@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* font-family: 'Alfa Slab One', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Roboto', sans-serif; */
+  
+  body {
+    background-image: url("https://images8.alphacoders.com/101/thumb-1920-1015180.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    font-size: 10px;
+  }
+  
+  /* se a tela tiver pelo menos X px vai carregar esses estilos (breakpoint) */
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    section .grid_icons {
+      grid-template-columns: repeat(2, 240px);
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 880px) {
+    section .grid_icons {
+      grid-template-columns: repeat(3, 240px);
+    }
+  }
+  
+  @media (min-width: 1230px) {
+    section .grid_icons {
+      grid-template-columns: repeat(4, 240px);
+    }
+  }
+  
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #titles  {  
+    position: absolute;  
+    width: 18em;  
+    height: 50em;  
+    bottom: 0;  
+    left: 50%;  
+    margin-left: -9em;  
+    font-size: 350%;  
+    font-weight: bold;  
+    text-align: justify;  
+    overflow: hidden;  
+    transform-origin: 50% 100%;  
+    transform: perspective(300px) rotateX(25deg);  
+   }
+   #titlecontent {
+    position: absolute;
+    top: 100%;
+   }
+
+   #titlecontent {   
+    animation: scroll 100s linear 4s infinite; 
+    color: yellow; 
+   }  
+   @keyframes scroll {  
+    0%   { top: 100%; }  
+    100% { top: -170%; }  
+   } 
+
+    #titles:after {  
+    position: absolute;  
+    content: ' ';  
+    left: 0;  
+    right: 0;  
+    top: 0;  
+    bottom: 60%;  
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);  
+    pointer-events: none;  
+   } 
+
+  head {
+      font-style: italic;
+  }
+  
+  h1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+  }
+  
+  section {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+    color: #1E90FF;
+    padding: 2em;
+  }
+  
+  section h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  section figure {
+    text-align: center;
+  }
+  
+  section .grid_icons {
+    display: grid;
+    gap: 2em;
+  }
+  
+  .grid_icons i {
+    color: #6A5ACD;
+    font-size: 1.5em;
+  }
+  
+  .menu {
+      background-color: #4169E1;  
+      position: fixed;
+      width: 100vw;
+      top: 0;  
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #5baaeb;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .menu a:hover {
+  background-color:	#5baaeb;
+  color: #4169E1;
+  }
+  
+  .a {
+    color: #66CDAA;
+  }
+  
+  .menu li {
+    list-style: none
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .site-title {
+    color: #4169E1;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.5em;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-family: 'Amatic SC', cursive;
+    color: #4169E1;
+    text-align: center;
+  }
+  
+  .sub {
+    font-style: italic;
+    font-family: 'Amatic SC', cursive;
+    color: #4169E1;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .img-portfolio {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+    transition: transform 0.2s;
+  
+  }
+  
+  .img-portfolio:hover {
+    transform: scale(1.05) rotate(1deg);
+  }
+  
+  .grid_icons a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: text-shadow 0.2s;
+   
+  }
+  
+  .contato a:active,
+  .contato a:hover {
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+  
+  }
+  
+  
+  
+  
